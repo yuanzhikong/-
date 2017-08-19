@@ -1,0 +1,140 @@
+#header {
+  border-bottom: 1px solid #e6e6e6;
+}
+#search {
+  border-bottom: 1px solid #e6e6e6;
+  height: 50px;
+  padding: 10px;
+}
+#search .searchtxt input {
+  border: none;
+  background: #f1f1f1;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  width: 90%;
+  padding-left: 5%;
+  font-size: 16px;
+}
+#search .searchbtn input {
+  width: 63px;
+  background: #ff841d;
+  color: #FFFFFF;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+}
+#product .nav {
+  height: 40px;
+  padding: 0 10px;
+  border-bottom: 1px solid #a1a1a1;
+}
+#product .nav a {
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  color: #666;
+}
+#product .nav button {
+  float: right;
+  height: 35px;
+  padding: 0 15px;
+  background: #666;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+#product .productList {
+  margin-bottom: 20px;
+}
+#product .productList .media {
+  padding: 15px 10px;
+  margin: 0;
+  border-bottom: 1px solid #a1a1a1;
+}
+#product .productList .media .media-left img {
+  width: 100px;
+}
+#product .productList .media .media-body h4 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+#product .productList .media .media-body p {
+  color: red;
+  padding-bottom: 5px;
+}
+#product .productList .media .media-body div {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+#product .productPate {
+  margin: 20px 0;
+  height: 40px;
+  padding: 0;
+}
+#product .productPate button {
+  display: inline-block;
+  height: 32px;
+  font-size: 14px;
+  background-color: #d4d4d4;
+  padding: 0 10px ;
+  line-height: 32px;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+#product .productPate #select {
+  height: 32px;
+  width: 80px;
+}
+#product .productPate #rbtn {
+  float: right;
+}
+#footer {
+  padding: 0px;
+}
+#footer .top {
+  border-top: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a1a1a1;
+  height: 36px;
+}
+#footer .top a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  color: #5a5a5a;
+}
+#footer .top .w30 {
+  border-right: 1px solid #a1a1a1;
+  width: 30%;
+  float: left;
+}
+#footer .top .w40 {
+  width: 40%;
+  float: right;
+}
+#footer .top .w40 img {
+  width: 15px;
+}
+#footer .bottom {
+  padding: 10px 0;
+}
+#footer .bottom p {
+  padding: 0px;
+  margin: 0;
+}
+#footer .bottom p *:nth-child(1) {
+  color: red;
+}
+#footer .bottom p *:nth-child(2) {
+  color: #5a5a5a;
+}

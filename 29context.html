@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/29context.css"/>
+</head>
+<body>
+
+<!--header start-->
+<header id="header">
+    <div class="logo">
+        <a href="./29index.html">
+            <img src="images/header_logo.png" alt=""/>
+        </a>
+    </div>
+    <div class="app-download">
+        <a href="./29index.html">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+</header>
+<!--header end-->
+<!--search start-->
+<section id="search">
+    <div class="searchtxt">
+        <input type="search" placeholder="请输入你想比价的商品"/>
+    </div>
+    <div class="searchbtn">
+        <input type="submit" value="搜索"/>
+    </div>
+</section>
+<!--search end-->
+
+<!--nav start-->
+<div id="product">
+    <div class="nav">
+        <a href="29index.html">首页 > </a>
+        <a href="29category.html">全部商品 > </a>
+        <span id="productCla"></span>
+        <button>筛选</button>
+    </div>
+    <div class="productList">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object"
+                         src="http://wnzk-img.zuyushop.com/r_img/img/20170815/18/9f89283971224e378ea6e79d80aa91c1.jpg"
+                         alt="">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Hisense 海信 KFR-50LW/85F-N2(2N14) 2匹 定频 立柜式空调</h4>
+
+                <p>3688元包邮（双重优惠）</p>
+
+                <div><span class="pull-left">苏宁易购 | 08-15 021:35</span><span class="pull-right">0</span></div>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object"
+                         src="http://wnzk-img.zuyushop.com/r_img/img/20170815/18/9f89283971224e378ea6e79d80aa91c1.jpg"
+                         alt="">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Hisense 海信 KFR-50LW/85F-N2(2N14) 2匹 定频 立柜式空调</h4>
+
+                <p>3688元包邮（双重优惠）</p>
+
+                <div><span class="pull-left">苏宁易购 | 08-15 021:35</span><span class="pull-right">0</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="productPate row">
+        <div class="col-xs-4">
+            <button id="lbtn">下一页</button>
+        </div>
+        <div class="col-xs-4">
+            <select name="select" id="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <div class="col-xs-4">
+            <button id="rbtn">上一页</button>
+        </div>
+    </div>
+</div>
+<!--nav end-->
+
+<!--footer start-->
+<footer id="footer">
+    <div class="top">
+        <a class="w30" href="#">登录</a>
+        <a class="w30" href="#">注册</a>
+        <a class="w40" href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <div class="bottom">
+        <p>
+            <a href="http://m.manmanbuy.com/app.html?type=footword&value=wap">手机APP下载</a>
+            <a href="http://m.manmanbuy.com/app.html?type=footword&value=wap">慢慢买手机版</a>
+            <a href="http://m.manmanbuy.com/app.html?type=footword&value=wap">--掌上比价平台</a>
+        </p>
+
+        <p>m.manmanbuy.com</p>
+    </div>
+
+</footer>
+<!--footer end-->
+
+
+<script type="text/template" id="productList">
+    {{each data as item i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                {{#item.productImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{item.productName}}</h4>
+
+            <p>{{item.productPrice}}</p>
+
+            <div><span class="pull-left">商城{{item.productQuote}}</span><span class="pull-right">{{item.productCom}}</span></div>
+        </div>
+    </div>
+
+    {{/each}}
+
+</script>
+
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/zepto.js/src/ajax.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/29context.js"></script>
+<script>
+
+</script>
+</body>
+</html>
